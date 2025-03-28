@@ -1,0 +1,19 @@
+# 忽略 Auto.js Pro 的缓存文件
+.idea/
+*.iml
+
+# 忽略日志输出
+logs/
+*.log
+
+# 忽略截图、临时文件
+screenshots/
+*.png
+*.jpg
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
+
+# 忽略 VSCode 配置（可选）
+.vscode/
