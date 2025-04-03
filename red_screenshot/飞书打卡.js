@@ -5,6 +5,13 @@ auto();
 let link = "https://applink.feishu.cn/T8V3q9uvOkJ6";
 let label = "飞书打卡";
 
+// ===== 随机延迟 1～8 分钟 =====
+let delayMinutes = random(1, 8);
+log("运行前随机延迟 " + delayMinutes + " 分钟...");
+toast("等待 " + delayMinutes + " 分钟后开始执行");
+
+sleep(delayMinutes * 60 * 1000);  // 转换成毫秒
+
 // ===== 判断是否是大陆工作日 =====
 function isTodayWorkday() {
     let dateStr = new java.text.SimpleDateFormat("yyyyMMdd").format(new Date());
